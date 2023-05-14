@@ -8,7 +8,7 @@ import base64
 app = Flask(__name__)
 
 # Configure OpenAI API credentials
-openai.api_key = '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'
+openai.api_key = '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'
 
 @app.route('/')
 def index():
@@ -45,7 +45,7 @@ def process(prompt):
     parser.add_argument("-s", "--size", help="Image size: 256, 512 or 1024", default=256)
     args = parser.parse_args()
 
-    api_key ="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"
+    api_key ="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"
     url = 'https://api.openai.com/v1/images/generations'
     custom_headers = {
         "Content-Type": "application/json",
